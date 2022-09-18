@@ -74,3 +74,297 @@ button{
     background-color: var(--accent-color);
 }
 
+/*---------------------Section Hero---------------------*/
+
+.hero{
+    background-color: var(--dark-fon-color);
+}
+
+.hero-link{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color:var(--primary-title-color);
+}
+
+.hero-link:hover,
+.hero-link:focus{
+    color: var(--accent-color);
+}
+
+.hero-subtext{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.hero-title{
+    font-family: 'Raleway';
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--secondary-text-color);
+}
+
+.hero-text{
+    color: var(--price-color);
+}
+
+/*------------------Section About-----------------*/
+
+.about .text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+}
+
+.about-title{
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color:var(--primary-title-color);
+}
+
+.about-subtext{
+    font-size: 14px;
+    line-height: 1.86;
+}
+
+.about-btn{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+    background-color: transparent;
+}
+
+.about-btn:hover,
+.about-btn:focus{
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+}
+
+/*--------------------Section Prices-------------------*/
+
+.prices{
+    background-color: var(--dark-fon-color);
+}
+
+.prices .text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.prices-title{
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--secondary-text-color);
+}
+
+.prices-list{
+    background-color: var(--primary-title-color);
+}
+
+.prices-text{
+   color: var(--price-color);
+}
+
+.prices-btn{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    background-color: transparent;
+}
+.prices-btn:hover,
+.prices-btn:focus{
+    background-color: var(--accent-color);
+}
+
+/*-------------------Section School------------------*/
+
+.school-item span{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color:var(--primary-title-color);
+}
+
+.school-item .text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--primary-title-color);
+}
+
+.school-text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+}
+
+.school-title{
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color:var(--primary-title-color);
+}
+
+.school-item{
+    background-color: var(--light-fon-color);
+}
+
+/*-----------------Section Barbers----------------*/
+
+.barbers{
+    background-color: var(--light-fon-color);
+}
+
+.barbers-text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+}
+
+.barbers-title{
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color:var(--primary-title-color);
+}
+
+.barbers-subtitle{
+    line-height: 1.39;
+    text-align: center;
+    color:var(--primary-title-color);
+}
+
+.barbers-subtext{
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+/*-----------------------Section Portfolio---------------*/
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.portfolio-text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color:var(--primary-title-color);
+}
+
+/*-------------Section Online-booking--------------*/
+
+.booking{
+    background-color: var(--dark-fon-color);
+}
+.booking-title{
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color:var(--secondary-text-color);
+}
+
+/*--------------------Section Contacts----------------*/
+
+.contacts{
+    background-color: var(--dark-fon-color);
+}
+
+.contacts-title{
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--secondary-text-color);
+}
+.contacts-address{
+font-style: normal;
+}
+
+.address{
+    font-weight: 700;
+    color: var(--price-color);
+}
+
+.contacts-phone,
+.contacts-mail{
+    color: var(--price-color);
+}
+.contacts-mail:hover,
+.contacts-mail:focus{
+    color: var(--accent-color);
+}
+
+.contacts-text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+.contacts-subtext{
+    color:var(--price-color);
+}
+/*-----------------Footer---------------*/
+
+.footer-text{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color:var(--price-color);
+}
+.footer-link{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--primary-title-color);
+}
+
