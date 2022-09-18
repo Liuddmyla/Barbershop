@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--Шапка сайту-->
-   <header>
+   <header class="header">
     <nav>
-       <a href="./index.html">
+       <a class="logo" href="./index.html">
           <img src="./images/Logo.svg" alt="logo" />
        </a>
-      <ul>
-        <li>
-          <a href="#">About</a>
+      <ul class="header-list list">
+        <li class="header-item">
+          <a class="header-nav link" href="#about">About</a>
         </li>
-        <li>
-          <a href="#">Services and prices</a>
+        <li class="header-item">
+          <a class="header-nav link" href="#prices">Services and prices</a>
         </li>
-        <li>
-          <a href="#">Barbers</a>
+        <li class="header-item">
+          <a class="header-nav link" href="#barbers">Barbers</a>
         </li>
-        <li>
-          <a href="#">Contacts</a>
+        <li class="header-item">
+          <a class="header-nav link" href="#contacts">Contacts</a>
         </li>
       </ul>
     </nav>
-     <a href="tel:+380441111111">+38 044 111 11 11</a>
-     <button type="button">Online-booking</button>
+     <a class="phone link" href="tel:+380441111111">+38 044 111 11 11</a>
+     <button class="header-btn" type="button">Online-booking</button>
    </header> 
    <main>
     <!--Section Hero-->
@@ -44,7 +49,7 @@
         We work quickly, carefully and with style.</p>
     </section>
     <!--Section About-->
-    <section>
+    <section id="about">
         <ul>
             <li>
                 <img src="./images/about-img1.jpg" alt="">
@@ -62,7 +67,7 @@
         <button type="button">Online-booking</button>
     </section>
     <!--Section Prices-->
-    <section>
+    <section id="prices">
       <p>Spend your time with the best masters</p>
       <h2>Services and prices</h2>
       <ul>
@@ -127,7 +132,7 @@
       <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
     </section>
     <!--Section Barbers-->
-    <section>
+    <section id="barbers">
       <p>For true enjoyers of the atmosphere</p>
       <h2>Our barbers</h2>
       <ul>
@@ -182,7 +187,7 @@
       <h2>Online-booking</h2>
     </section>
     <!--Section Contacts-->
-    <section>
+    <section id="contacts">
       <h2>Contacts</h2>
       <address>
         <a href="https://goo.gl/maps/NWzhvcHoCaAMEMKV7" target="_blank" rel="noopener noreferrer nofollow">st. Vasilkivska, 7A <br/> Kyiv, 08132</a>
