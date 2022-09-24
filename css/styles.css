@@ -266,11 +266,19 @@ img{
 
 /*--------------------Section Prices-------------------*/
 
+.prices-container{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+}
+
 .prices{
     background-color: var(--dark-fon-color);
 }
 
 .prices .text{
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -279,6 +287,8 @@ img{
 }
 
 .prices-title{
+    margin-bottom: 44px;
+
     font-family: 'Raleway';
     font-size: 42px;
     line-height: 1.17;
@@ -287,6 +297,9 @@ img{
 }
 
 .prices-list{
+    padding: 30px 20px;
+    width: 570px;
+
     background-color: var(--primary-title-color);
 }
 
@@ -294,7 +307,21 @@ img{
    color: var(--price-color);
 }
 
+.prices-item{
+    display: flex;
+    justify-content: space-between;
+}
+.prices-item:nth-child(n+2){
+    margin-top: 20px;
+}
+
 .prices-btn{
+    min-width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid var(--accent-color);
+    margin: 0 auto;
+
     font-family: inherit;
     font-style: normal;
     font-weight: 600;
@@ -311,6 +338,14 @@ img{
 }
 
 /*-------------------Section School------------------*/
+
+.school-content{
+    display: flex;
+}
+.school-container{
+    padding-top: 9px;
+    
+}
 
 .school-item span{
     font-weight: 700;
@@ -336,8 +371,14 @@ img{
     text-transform: uppercase;
     color: var(--primary-title-color);
 }
-
+.school-subtext{
+    max-width: 500px;
+}
 .school-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 430px;
+
     font-family: 'Raleway';
     font-size: 42px;
     line-height: 1.17;
@@ -346,8 +387,33 @@ img{
 }
 
 .school-item{
+    width: 170px;
+    height: 133px;
+    padding: 20px 24px;
+    align-items: center;
     background-color: var(--light-fon-color);
 }
+span{
+    display: block;
+}
+.school-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 370px;
+}
+.school-list:first-child{
+    margin-left: 100px;
+    margin-right: 130px;
+}
+.school-item:nth-child(2){
+    margin-top: 35px;
+}
+.school-item:nth-child(3) {
+    margin-top: -35px;
+}
+
+
 
 /*-----------------Section Barbers----------------*/
 
@@ -400,11 +466,17 @@ img{
 }
 
 .portfolio-text{
+    margin-bottom: 44px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     text-transform: uppercase;
     color:var(--primary-title-color);
+}
+.portfolio-list{
+    display: flex;
+    gap: 30px;
 }
 
 /*-------------Section Online-booking--------------*/
