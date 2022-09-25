@@ -422,6 +422,8 @@ span{
 }
 
 .barbers-text{
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -430,6 +432,8 @@ span{
 }
 
 .barbers-title{
+    margin-bottom: 44px;
+
     font-family: 'Raleway';
     font-size: 42px;
     line-height: 1.17;
@@ -437,13 +441,28 @@ span{
     color:var(--primary-title-color);
 }
 
+.barbers-list{
+    display: flex;
+    gap: 30px;
+}
+.network{
+    max-width: 370px;
+    display: flex;
+    justify-content: center;
+}
+
 .barbers-subtitle{
+    margin-top: 30px;
+    margin-bottom: 8px;
+
     line-height: 1.39;
     text-align: center;
     color:var(--primary-title-color);
 }
 
 .barbers-subtext{
+    margin-bottom: 30px;
+
     font-size: 14px;
     line-height: 1.36;
     text-align: center;
@@ -482,6 +501,10 @@ span{
 /*-------------Section Online-booking--------------*/
 
 .booking{
+    padding-top: 130px;
+    padding-bottom: 183px;
+    
+
     background-color: var(--dark-fon-color);
 }
 .booking-title{
@@ -495,16 +518,28 @@ span{
 /*--------------------Section Contacts----------------*/
 
 .contacts{
+    padding-top: 130px;
+    padding-bottom: 120px;
+   
+
     background-color: var(--dark-fon-color);
 }
 
 .contacts-title{
+    margin-bottom: 40px;
+
     font-family: 'Raleway';
     font-size: 42px;
     line-height: 1.17;
     letter-spacing: 0.05em;
     color: var(--secondary-text-color);
 }
+
+.contacts-phone{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .contacts-address{
 font-style: normal;
 }
@@ -524,6 +559,9 @@ font-style: normal;
 }
 
 .contacts-text{
+    margin-top: 70px;
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -533,6 +571,7 @@ font-style: normal;
 .contacts-subtext{
     color:var(--price-color);
 }
+
 /*-----------------Footer---------------*/
 
 .footer-text{
@@ -543,6 +582,9 @@ font-style: normal;
     color:var(--price-color);
 }
 .footer-link{
+    padding-top: 56px;
+    padding-bottom: 56px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -550,3 +592,12 @@ font-style: normal;
     color: var(--primary-title-color);
 }
 
+.footer-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.footer-list{
+    display: flex;
+    gap: 40px;
+}
