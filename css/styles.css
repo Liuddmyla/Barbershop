@@ -51,6 +51,7 @@ ul,ol{
 .link{
     display: block;
     text-decoration: none;
+    transition: color 250ms linear;
 }
 
 button{
@@ -74,7 +75,7 @@ img{
 }
 .header-fon{
     display: flex;
-    background-color: var(--dark-fon-color);
+   /*background-color: var(--dark-fon-color);*/
     flex-grow: 1;
 }
 .nav{
@@ -138,11 +139,17 @@ img{
     text-transform: uppercase;
     color: var(--secondary-text-color);
     background-color: transparent;
+    transition: background-color 250ms linear;
 }
 
 .header-btn:hover,
 .header-btn:focus{
     background-color: var(--accent-color);
+}
+
+.header{
+    position: absolute;
+    width: 100%;
 }
 
 /*---------------------Section Hero---------------------*/
@@ -151,8 +158,26 @@ img{
     display: flex;    
 }
 .hero-list{
+    display: flex;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    gap: 40px;
+    align-items: center;
+}
+.hero-soc{
     width: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 30px;
     
+}
+
+.hero-list::before{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+   
 }
 
 .hero-content{
@@ -170,6 +195,7 @@ img{
     line-height: 1.36;
     letter-spacing: 0.2em;
     color:var(--primary-title-color);
+    transition: color 250ms linear;
 }
 
 .hero-link:hover,
@@ -211,6 +237,8 @@ img{
     height: 1px;
     background-color: currentColor;
 }
+
+
 
 /*------------------Section About-----------------*/
 
@@ -280,6 +308,7 @@ img{
     text-transform: uppercase;
     color: var(--primary-title-color);
     background-color: transparent;
+    transition: background-color 250ms linear, color 250ms linear;
 }
 
 .about-btn:hover,
@@ -366,6 +395,7 @@ img{
     text-transform: uppercase;
     color: var(--secondary-text-color);
     background-color: transparent;
+    transition: background-color 250ms linear;
 }
 .prices-btn:hover,
 .prices-btn:focus{
@@ -651,6 +681,7 @@ font-style: normal;
 .contacts-phone,
 .contacts-mail{
     color: var(--price-color);
+    transition: color 250ms linear;
 }
 .contacts-mail:hover,
 .contacts-mail:focus{
@@ -732,3 +763,5 @@ font-style: normal;
     height: 1px;
     background-color: currentColor;
 }
+
+
