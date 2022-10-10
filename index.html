@@ -38,7 +38,7 @@
         </nav>
         <div class="header-contact">
           <a class="phone link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header-btn" type="button">Online-booking</button>
+          <button data-modal-open class="header-btn" type="button">Online-booking</button>
         </div>
       </div>    
   </div>
@@ -82,7 +82,7 @@
             you fall into the hands
             of our master, you will never be the same again. We are a team that is always "on the same wave" with clients.
             Therefore, we are always ready to improve everyone who comes to us!</p>
-          <button class="about-btn" type="button">Online-booking</button>
+          <button data-modal-open class="about-btn" type="button">Online-booking</button>
         </div>        
       </div>        
     </section>
@@ -129,7 +129,7 @@
             </li>
           </ul>
         </div>        
-        <button class="prices-btn" type="button">Online-booking</button>
+        <button data-modal-open class="prices-btn" type="button">Online-booking</button>
       </div>      
     </section>
     <!--Section School-->
@@ -340,8 +340,17 @@
         <li class="footer-item"><a class="footer-link link" href="#" target="_blank"
             rel="noopener noreferrer nofollow">Youtube</a></li>
       </ul>
-    </div>
-    
+    </div>    
    </footer>
+   <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" data-modal-close class="modal-btn">
+        <svg width="11" height="11">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+   </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>

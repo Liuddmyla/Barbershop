@@ -764,4 +764,51 @@ font-style: normal;
     background-color: currentColor;
 }
 
+/*                              Модальне вікно*/
 
+.backdrop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+}
+
+.modal{
+    position: absolute;
+    width: 530px;
+    height: 580px;
+    background-color: var(--secondary-text-color);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0) scale(1);
+    transition: transform 250ms linear;
+}
+
+.backdrop.is-hidden .modal{
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+}
+
+.modal-btn{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
