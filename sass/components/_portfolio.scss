@@ -1,0 +1,24 @@
+.portfolio-text {
+    margin-bottom: 44px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.portfolio-text::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.portfolio-list {
+    display: flex;
+    gap: 30px;
+}

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!--Header-->
@@ -20,25 +20,25 @@
           <img src="./images/Logo.svg" alt="logo" />
       </a>
       <div class="header-fon">
-        <nav class="header-navigation">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-nav link" href="#about">About</a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#about">About</a>
             </li>
-            <li class="header-item">
-              <a class="header-nav link" href="#prices">Services and prices</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#prices">Services and prices</a>
             </li>
-            <li class="header-item">
-              <a class="header-nav link" href="#barbers">Barbers</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#barbers">Barbers</a>
             </li>
-            <li class="header-item">
-              <a class="header-nav link" href="#contacts">Contacts</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
         <div class="header-contact">
-          <a class="phone link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button data-modal-open class="header-btn" type="button">Online-booking</button>
+          <a class="header-contact__link link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button data-modal-open class="header-contact__btn" type="button">Online-booking</button>
         </div>
       </div>    
   </div>
@@ -48,17 +48,17 @@
     <section class="hero">
       <div class="container hero-box">
         <div class="hero-soc">
-          <ul class="hero-list list">
-            <li class="hero-item"><a class="hero-link link" href="#" target="_blank"
+          <ul class="hero-soc__list list">
+            <li class="hero-soc__item"><a class="hero-soc__link link" href="#" target="_blank"
                 rel="noopener noreferrer nofollow">Instagram</a></li>
-            <li class="hero-item"><a class="hero-link link" href="#" target="_blank"
+            <li class="hero-soc__item"><a class="hero-soc__link link" href="#" target="_blank"
                 rel="noopener noreferrer nofollow">Youtube</a></li>
           </ul>
         </div>        
         <div class="hero-content">
-          <p class="hero-subtext">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-text">We are experts in trendy men’s haircuts.
+          <p class="hero-content__subtext">A hair salon for men in Kyiv</p>
+          <h1 class="hero-content__title">BarberShop</h1>
+          <p class="hero-content__text">We are experts in trendy men’s haircuts.
             We work quickly, carefully and with style.</p>
         </div>        
       </div>        
@@ -309,6 +309,24 @@
           <div class="container-booking">
             <h2 class="booking-title">Online-booking</h2>
           </div>
+          <form class="booking-form">
+            <div class="booking-box">
+              <div class="booking-name">
+                <label class="booking-label" for="name">Name*</label>
+                <input class="booking-input" type="text" name="name" id="name" />
+                
+              </div>
+              <div class="booking-tel">
+                <label class="booking-label" for="tel">Phone*</label>
+                <input class="booking-input" type="tel" name="phone" id="tel" />
+              </div>
+            </div>           
+            <div class="booking-textarea">
+              <label class="booking-label" for="textarea">Message</label>
+              <textarea class="booking-coment textarea-coment" type="text" name="textarea" id="textarea"></textarea>
+            </div>
+            <button class="booking-btn" type="submit">send</button>
+          </form>
         </section>
         <!--Section Contacts-->
         <section class="contacts" id="contacts">

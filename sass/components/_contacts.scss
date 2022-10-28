@@ -1,0 +1,83 @@
+.contacts {
+    padding-top: 130px;
+    padding-bottom: 120px;
+
+
+    background-color: var(--dark-fon-color);
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--secondary-text-color);
+}
+
+.contacts-phone {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts-address {
+    font-style: normal;
+}
+
+.address {
+    font-weight: 700;
+    color: var(--price-color);
+}
+
+.contacts-phone,
+.contacts-mail {
+    color: var(--price-color);
+    transition: color 250ms linear;
+}
+
+.contacts-mail:hover,
+.contacts-mail:focus {
+    color: var(--accent-color);
+}
+
+.contacts-text {
+    margin-top: 70px;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts-text::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.contacts-subtext {
+    color: var(--price-color);
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking {
+    width: 615px;
+
+}
+
+.contacts {
+    width: 585px;
+    padding-left: 100px;
+    background-image: url(../images/Bg.png);
+}

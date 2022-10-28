@@ -1,0 +1,44 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    transition: color 250ms linear;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+button {
+    display: block;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+.section {
+    padding: 120px 0;
+}

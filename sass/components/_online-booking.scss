@@ -1,0 +1,74 @@
+.booking {
+    padding-top: 130px;
+    padding-bottom: 183px;
+    padding-left: 116px;
+
+    background-color: var(--dark-fon-color);
+}
+
+.booking-title {
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--secondary-text-color);
+    margin-bottom: 44px;
+   
+}
+.booking-btn{
+    min-width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid var(--accent-color);
+    margin: 0 auto;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    background-color: transparent;
+    transition: background-color 250ms linear;
+}
+.booking-btn:hover,
+.booking-btn:focus {
+    background-color: var(--accent-color);
+}
+.booking-input,
+.booking-coment{
+    position: relative;
+    background-color: transparent;
+    outline: none;
+    border: transparent;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    width: 220px;
+    padding-left: 50px;
+    cursor: pointer;
+}
+.booking-label{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+}
+.textarea-coment{
+    width: 470px;
+    resize: none;
+    margin-top: 60px;
+    margin-bottom: 44px;
+}
+.booking-box{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+}
+.booking-input:hover,
+.booking-coment:hover {
+   
+    border-bottom: 1px solid var(--secondary-text-color);
+}

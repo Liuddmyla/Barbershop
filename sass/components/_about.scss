@@ -1,0 +1,78 @@
+.about-box {
+    display: flex;
+    gap: 30px;
+}
+
+.about-list {
+    display: flex;
+    gap: 30px;
+}
+
+.about-content {
+    width: 470px;
+}
+
+.about .text {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.about-title {
+    margin-bottom: 20px;
+
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--primary-title-color);
+}
+
+.about-text {
+    margin-bottom: 20px;
+}
+
+.about-subtext {
+    margin-bottom: 42px;
+
+    font-size: 14px;
+    line-height: 1.86;
+}
+
+.about-btn {
+    min-width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid var(--accent-color);
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+    background-color: transparent;
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+.about-btn:hover,
+.about-btn:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+}

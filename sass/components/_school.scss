@@ -1,0 +1,97 @@
+.school-content {
+    display: flex;
+}
+
+.school-container {
+    padding-top: 9px;
+
+}
+
+.school-item span {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--primary-title-color);
+}
+
+.school-item .text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--primary-title-color);
+}
+
+.school-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.school-text::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.school-subtext {
+    max-width: 500px;
+}
+
+.school-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 430px;
+
+    font-family: 'Raleway';
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--primary-title-color);
+}
+
+.school-item {
+    width: 170px;
+    height: 133px;
+    padding: 20px 24px;
+    align-items: center;
+    background-color: var(--light-fon-color);
+}
+
+span {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.school-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 370px;
+}
+
+.school-list:first-child {
+    margin-left: 100px;
+    margin-right: 130px;
+}
+
+.school-item:nth-child(2) {
+    margin-top: 35px;
+}
+
+.school-item:nth-child(3) {
+    margin-top: -35px;
+}
+
+.school-icon {
+    height: 22px;
+}
