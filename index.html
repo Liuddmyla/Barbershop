@@ -14,7 +14,7 @@
 </head>
 <body>
     <!--Header-->
-   <header class="header">
+   <!--<header class="header">
     <div class="container nav">
       <a class="logo link" href="./index.html">
           <img src="./images/Logo.svg" alt="logo" />
@@ -42,10 +42,10 @@
         </div>
       </div>    
   </div>
-    </header> 
+    </header>--> 
    <main>
     <!--Section Hero-->
-    <section class="hero">
+    <!--<section class="hero">
       <div class="container hero-box">
         <div class="hero-soc">
           <ul class="hero-soc__list list">
@@ -62,9 +62,9 @@
             We work quickly, carefully and with style.</p>
         </div>        
       </div>        
-    </section>
+    </section>-->
     <!--Section About-->
-    <section class="about section" id="about">
+    <!--<section class="about section" id="about">
       <div class="container about-box">
         <ul class="about-list list">
           <li class="about-item">
@@ -85,9 +85,9 @@
           <button data-modal-open class="about-btn" type="button">Online-booking</button>
         </div>        
       </div>        
-    </section>
+    </section>-->
     <!--Section Prices-->
-    <section class="prices section" id="prices">
+    <!--<section class="prices section" id="prices">
       <div class="container">
         <p class="text">Spend your time with the best masters</p>
         <h2 class="prices-title">Services and prices</h2>
@@ -131,9 +131,9 @@
         </div>        
         <button data-modal-open class="prices-btn" type="button">Online-booking</button>
       </div>      
-    </section>
+    </section>-->
     <!--Section School-->
-    <section class="school section">
+    <!--<section class="school section">
       <div class="container school-content">
         <ul class="school-list list">
           <li class="school-item">
@@ -176,7 +176,7 @@
           </p>
         </div>        
       </div>      
-    </section>
+    </section>-->
     <!--Section Barbers-->
     <section class="barbers section" id="barbers">
       <div class="container">
@@ -184,7 +184,15 @@
         <h2 class="barbers-title">Our barbers</h2>
         <ul class="barbers-list list">
           <li class="barbers-item">
-            <img src="./images/barber-img1.jpg" alt="Barbers" width="370" height="346">
+            <picture>
+              <source srcset="./images/barber-img1.jpg 1x, ./images/barber-img1-2x.jpg 2x"
+               media="(min-width: 1200px)"/>
+              <source srcset="./images/barber-img1-tab.jpg 1x, ./images/barber-img1-tab-2x.jpg 2x"
+               media="(min-width: 768px)"/>
+              <source srcset="./images/barber-img1-mob.jpg 1x, ./images/barber-img1-mob-2x.jpg 2x"
+               media="(min-width: 480px)"/>
+              <img src="./images/barber-img1.jpg" alt="Barbers" width="450">
+            </picture>            
               <h3 class="barbers-subtitle">John Smith</h3>
               <p class="barbers-subtext">Extreme Barber</p>
               <ul class="network">
@@ -218,7 +226,12 @@
                 </li>
               </ul>            
           <li class="barbers-item">
-            <img src="./images/barber-img2.jpg" alt="Barbers" width="370" height="346">
+            <picture>
+              <source srcset="./images/barber-img2.jpg 1x, ./images/barber-img2-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/barber-img2-tab.jpg 1x, ./images/barber-img2-tab-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/barber-img2-mob.jpg 1x, ./images/barber-img2-mob-2x.jpg 2x" media="(min-width: 480px)" />
+              <img src="./images/barber-img2.jpg" alt="Barbers" width="450">
+            </picture>            
             <h3 class="barbers-subtitle">Michele Doe</h3>
             <p class="barbers-subtext">Extreme Barber</p>
             <ul class="network">
@@ -253,7 +266,12 @@
             </ul>
           </li>
           <li class="barbers-item">
-            <img src="./images/barber-img3.jpg" alt="Barbers" width="370" height="346">
+            <picture>
+              <source srcset="./images/barber-img3.jpg 1x, ./images/barber-img3-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/barber-img3-tab.jpg 1x, ./images/barber-img3-tab-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/barber-img3-mob.jpg 1x, ./images/barber-img3-mob-2x.jpg 2x" media="(min-width: 480px)" />
+              <img src="./images/barber-img3.jpg" alt="Barbers" width="450">
+            </picture>          
             <h3 class="barbers-subtitle">Alan Black</h3>
             <p class="barbers-subtext">Extreme Barber</p>
             <ul class="network">
@@ -296,15 +314,55 @@
         <h2 class="visually-hidden">Portfolio</h2>
         <p class="portfolio-text">In Latin, "barba" means "beard"</p>
         <ul class="portfolio-list list">
-          <li class="portfolio-item"><img src="./images/portfolio-1.jpg" alt="Barbers" width="270" height="360"></li>
-          <li class="portfolio-item"><img src="./images/portfolio-2.jpg" alt="Barbers" width="270" height="360"></li>
-          <li class="portfolio-item"><img src="./images/portfolio-3.jpg" alt="Barbers" width="270" height="360"></li>
-          <li class="portfolio-item"><img src="./images/portfolio-4.jpg" alt="Barbers" width="270" height="360"></li>
+          <li class="portfolio-item">
+            <picture>
+              <source srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1-2x.jpg 2x" 
+              media="(min-width: 1200px)" />
+              <source srcset="./images/portfolio-1-tab.jpg 1x, ./images/portfolio-1-tab-2x.jpg 2x" 
+              media="(min-width: 768px)" />
+              <source srcset="./images/portfolio-1-mob.jpg 1x, ./images/portfolio-1-mob-2x.jpg 2x" 
+              media="(min-width: 480px)" />
+              <img src="./images/portfolio-1.jpg" alt="Barbers" width="418">
+            </picture>
+             </li>
+          <li class="portfolio-item">
+            <picture>
+              <source srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2-2x.jpg 2x" 
+              media="(min-width: 1200px)" />
+              <source srcset="./images/portfolio-2-tab.jpg 1x, ./images/portfolio-2-tab-2x.jpg 2x" 
+              media="(min-width: 768px)" />
+              <source srcset="./images/portfolio-2-mob.jpg 1x, ./images/portfolio-2-mob-2x.jpg 2x" 
+              media="(min-width: 480px)" />
+              <img src="./images/portfolio-2.jpg" alt="Barbers" width="418">
+            </picture>
+           </li>
+          <li class="portfolio-item">
+              <picture>
+              <source srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3-2x.jpg 2x" 
+              media="(min-width: 1200px)" />
+              <source srcset="./images/portfolio-3-tab.jpg 1x, ./images/portfolio-3-tab-2x.jpg 2x" 
+              media="(min-width: 768px)" />
+              <source srcset="./images/portfolio-3-mob.jpg 1x, ./images/portfolio-3-mob-2x.jpg 2x" 
+              media="(min-width: 480px)" />
+              <img src="./images/portfolio-3.jpg" alt="Barbers" width="418">
+              </picture>
+            </li>
+          <li class="portfolio-item">
+            <picture>
+              <source srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4-2x.jpg 2x" 
+              media="(min-width: 1200px)" />
+              <source srcset="./images/portfolio-4-tab.jpg 1x, ./images/portfolio-4-tab-2x.jpg 2x" 
+              media="(min-width: 768px)" />
+              <source srcset="./images/portfolio-4-mob.jpg 1x, ./images/portfolio-4-mob-2x.jpg 2x" 
+              media="(min-width: 480px)" />
+              <img src="./images/portfolio-4.jpg" alt="Barbers" width="418">
+            </picture>
+            </li>
         </ul>
       </div>      
     </section>
     <!--Section Online-booking--> 
-    <div class="container box">
+    <!--<div class="container box">
         <section class="booking">
           <div class="container-booking">
             <h2 class="booking-title">Online-booking</h2>
@@ -327,9 +385,9 @@
             </div>
             <button class="booking-btn" type="submit">send</button>
           </form>
-        </section>
+        </section>-->
         <!--Section Contacts-->
-        <section class="contacts" id="contacts">
+        <!--<section class="contacts" id="contacts">
           <div class="container-contacts">
             <h2 class="contacts-title">Contacts</h2>
             <address class="contacts-address">
@@ -345,11 +403,11 @@
             <p class="contacts-subtext">Every day from 9:00 to 22:00</p>
           </div>
         </section>
-    </div>   
+    </div>-->   
        
    </main>
    <!--Footer-->
-   <footer class="footer">
+   <!--<footer class="footer">
     <div class="container footer-container">
       <p class="footer-text">&#169;Copyright 2020</p>
       <ul class="footer-list list">
@@ -359,7 +417,7 @@
             rel="noopener noreferrer nofollow">Youtube</a></li>
       </ul>
     </div>    
-   </footer>
+   </footer>-->
    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" data-modal-close class="modal-btn">
