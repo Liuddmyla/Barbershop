@@ -1,9 +1,19 @@
 .booking {
-    padding-top: 130px;
-    padding-bottom: 183px;
-    padding-left: 116px;
-
+    @media screen and (min-width: 1200px) {
+        padding-top: 130px;
+        padding-bottom: 183px;
+        padding-left: 116px;
+        padding-right: 30px;
+    } 
+    flex-basis: auto;
     background-color: var(--dark-fon-color);
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+        padding: 100px 25px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        padding: 84px 15px;
+    }
 }
 
 .booking-title {
@@ -44,7 +54,7 @@
     outline: none;
     border: transparent;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-    width: 220px;
+    width: 100%;
     padding-left: 50px;
     cursor: pointer;
 }
@@ -57,7 +67,7 @@
     color: rgba(157, 164, 189, 0.4);
 }
 .textarea-coment{
-    width: 470px;
+    width: 100%;
     resize: none;
     margin-top: 60px;
     margin-bottom: 44px;
@@ -66,9 +76,17 @@
     display: flex;
     gap: 30px;
     margin-bottom: 44px;
+    
 }
+
+.booking-name,
+.booking-tel{
+    width: calc((100% - 60px)/2);
+}
+
 .booking-input:hover,
 .booking-coment:hover {
    
     border-bottom: 1px solid var(--secondary-text-color);
 }
+

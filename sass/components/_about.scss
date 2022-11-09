@@ -5,11 +5,23 @@
 
 .about-list {
     display: flex;
-    gap: 30px;
+    gap: 30px;    
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+        flex-direction: column;        
+    }
+
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
 }
 
 .about-content {
     width: 470px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 330px;
+    }
 }
 
 .about .text {
@@ -40,10 +52,24 @@
     line-height: 1.17;
     letter-spacing: 0.05em;
     color: var(--primary-title-color);
+
+    @media screen and (max-width: 1199.98px) {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+    @media screen and (max-width: 767.98px) {
+       max-width: 306px;
+    }
 }
 
 .about-text {
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767.98px) {
+        font-size: 16px;
+        line-height: 1.63;
+    }
 }
 
 .about-subtext {

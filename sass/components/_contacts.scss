@@ -1,9 +1,18 @@
 .contacts {
-    padding-top: 130px;
-    padding-bottom: 120px;
-
+    @media screen and (min-width: 1200px) {
+            padding-top: 130px;
+            padding-bottom: 120px;
+    }
 
     background-color: var(--dark-fon-color);
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+        padding: 100px 25px;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        padding: 84px 15px;
+    }
 }
 
 .contacts-title {
@@ -69,15 +78,52 @@
 .box {
     display: flex;
     justify-content: space-between;
+    background-color: var(--dark-fon-color);
+    @media screen and (max-width: 1199.98px) {
+       flex-direction: column; 
+    }
 }
 
 .booking {
-    width: 615px;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+        width: 615px;
+    }
+   
 
 }
 
 .contacts {
-    width: 585px;
-    padding-left: 100px;
-    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-width: 1200px) {
+        width: 585px;
+        padding-left: 100px;
+    }
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+    background-image: url(../images/bg-mob-2x.png);
+   }
+    background-image: url(../images/bg-mob.png);
+
+    @media screen and (min-width: 768px) {
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+             background-image: url(../images/bg-tab-2x.png);
+        }        
+            background-image: url(../images/bg-tab.png);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/bg-2x.png);
+            }
+        
+            background-image: url(../images/bg.png);
+    }    
 }

@@ -2,11 +2,43 @@
     display: flex;
     gap: 30px;
     margin-bottom: 44px;
+    @media screen and (max-width:1199.98px) {
+        display: none;
+    }
 }
-
+.prices-box {
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
+}
 .prices {
     background-color: #111319;
-    background-image: url(../images/prices-bg.png);
+    background-image: url(../images/prices-bg-mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/prices-bg-mob-2x.png);
+    }
+    @media screen and (min-width: 768px) {
+        background-color: #111319;
+        background-image: url(../images/prices-bg-tab.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/prices-bg-tab-2x.png);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        background-color: #111319;
+        background-image: url(../images/prices-bg.png);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/prices-bg-2x.png);
+        }
+    }
 }
 
 .prices .text {
@@ -23,20 +55,24 @@
 }
 
 .prices-title {
-    margin-bottom: 44px;
-
     font-family: 'Raleway';
-    font-size: 42px;
-    line-height: 1.17;
+    font-size: 40px;
+    line-height: 1.18;
     letter-spacing: 0.05em;
     color: var(--secondary-text-color);
+    margin-bottom: 44px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 1.17;
+    }
 }
 
 .prices-list {
     padding: 30px 20px;
-    width: 570px;
-
+    width: 100%; 
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+
 }
 
 .secondary-price {
@@ -66,6 +102,7 @@
     border-radius: 25px;
     border: 1px solid var(--accent-color);
     margin: 0 auto;
+    margin-top: 44px;
 
     font-family: inherit;
     font-style: normal;

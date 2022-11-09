@@ -95,7 +95,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 .section {
@@ -297,9 +296,24 @@ img {
   display: flex;
   gap: 30px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .about-list {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .about-list {
+    display: none;
+  }
+}
 
 .about-content {
   width: 470px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .about-content {
+    width: 330px;
+  }
 }
 
 .about .text {
@@ -329,9 +343,26 @@ img {
   letter-spacing: 0.05em;
   color: var(--primary-title-color);
 }
+@media screen and (max-width: 1199.98px) {
+  .about-title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .about-title {
+    max-width: 306px;
+  }
+}
 
 .about-text {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767.98px) {
+  .about-text {
+    font-size: 16px;
+    line-height: 1.63;
+  }
 }
 
 .about-subtext {
@@ -368,10 +399,50 @@ img {
   gap: 30px;
   margin-bottom: 44px;
 }
+@media screen and (max-width: 1199.98px) {
+  .prices-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .prices-box {
+    display: none;
+  }
+}
 
 .prices {
   background-color: #111319;
-  background-image: url(../images/prices-bg.png);
+  background-image: url(../images/prices-bg-mob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/prices-bg-mob-2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .prices {
+    background-color: #111319;
+    background-image: url(../images/prices-bg-tab.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/prices-bg-tab-2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prices {
+    background-color: #111319;
+    background-image: url(../images/prices-bg.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/prices-bg-2x.png);
+  }
 }
 
 .prices .text {
@@ -387,17 +458,23 @@ img {
 }
 
 .prices-title {
-  margin-bottom: 44px;
   font-family: "Raleway";
-  font-size: 42px;
-  line-height: 1.17;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--secondary-text-color);
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .prices-title {
+    font-size: 42px;
+    line-height: 1.17;
+  }
 }
 
 .prices-list {
   padding: 30px 20px;
-  width: 570px;
+  width: 100%;
   background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
@@ -426,6 +503,7 @@ img {
   border-radius: 25px;
   border: 1px solid var(--accent-color);
   margin: 0 auto;
+  margin-top: 44px;
   font-family: inherit;
   font-style: normal;
   font-weight: 600;
@@ -456,10 +534,43 @@ img {
 
 .school-content {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1200px) {
+  .school-content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.school-box {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .school-box {
+    width: 480px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .school-box {
+    width: 400px;
+    margin: 0 100px;
+  }
 }
 
 .school-container {
-  padding-top: 9px;
+  padding: 0 15px;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 1200px) {
+  .school-container {
+    margin-bottom: 0;
+    width: 40%;
+  }
 }
 
 .school-item span {
@@ -498,22 +609,31 @@ img {
 }
 
 .school-subtext {
-  max-width: 500px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .school-subtext {
+    width: 500px;
+  }
 }
 
 .school-title {
   margin-top: 20px;
   margin-bottom: 20px;
-  max-width: 430px;
   font-family: "Raleway";
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--primary-title-color);
 }
+@media screen and (min-width: 768px) {
+  .school-title {
+    width: 449px;
+  }
+}
 
 .school-item {
-  width: 170px;
+  width: calc((100% - 60px) / 2);
   height: 133px;
   padding: 20px 24px;
   align-items: center;
@@ -529,13 +649,8 @@ span {
 .school-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  width: 370px;
-}
-
-.school-list:first-child {
-  margin-left: 100px;
-  margin-right: 130px;
 }
 
 .school-item:nth-child(2) {
@@ -572,6 +687,11 @@ span {
   height: 1px;
   background-color: currentColor;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .barbers-text::before {
+    margin-left: 150px;
+  }
+}
 
 .barbers-title {
   margin-bottom: 44px;
@@ -581,17 +701,21 @@ span {
   letter-spacing: 0.05em;
   color: var(--primary-title-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .barbers-title {
+    margin-left: 150px;
+  }
+}
 
 .barbers-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.barbers-item {
-  width: 100%;
-}
 @media screen and (min-width: 1200px) {
   .barbers-item {
     width: calc((100% - 90px) / 3);
@@ -667,9 +791,6 @@ span {
   justify-content: center;
 }
 
-.portfolio-item {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .portfolio-item {
     width: calc((100% - 60px) / 2);
@@ -682,10 +803,26 @@ span {
 }
 
 .booking {
-  padding-top: 130px;
-  padding-bottom: 183px;
-  padding-left: 116px;
+  flex-basis: auto;
   background-color: var(--dark-fon-color);
+}
+@media screen and (min-width: 1200px) {
+  .booking {
+    padding-top: 130px;
+    padding-bottom: 183px;
+    padding-left: 116px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .booking {
+    padding: 100px 25px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .booking {
+    padding: 84px 15px;
+  }
 }
 
 .booking-title {
@@ -727,7 +864,7 @@ span {
   outline: none;
   border: transparent;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  width: 220px;
+  width: 100%;
   padding-left: 50px;
   cursor: pointer;
 }
@@ -742,7 +879,7 @@ span {
 }
 
 .textarea-coment {
-  width: 470px;
+  width: 100%;
   resize: none;
   margin-top: 60px;
   margin-bottom: 44px;
@@ -754,15 +891,34 @@ span {
   margin-bottom: 44px;
 }
 
+.booking-name,
+.booking-tel {
+  width: calc((100% - 60px) / 2);
+}
+
 .booking-input:hover,
 .booking-coment:hover {
   border-bottom: 1px solid var(--secondary-text-color);
 }
 
 .contacts {
-  padding-top: 130px;
-  padding-bottom: 120px;
   background-color: var(--dark-fon-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts {
+    padding: 100px 25px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .contacts {
+    padding: 84px 15px;
+  }
 }
 
 .contacts-title {
@@ -826,16 +982,58 @@ span {
 .box {
   display: flex;
   justify-content: space-between;
+  background-color: var(--dark-fon-color);
+}
+@media screen and (max-width: 1199.98px) {
+  .box {
+    flex-direction: column;
+  }
 }
 
 .booking {
-  width: 615px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .booking {
+    width: 615px;
+  }
 }
 
 .contacts {
-  width: 585px;
-  padding-left: 100px;
-  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/bg-mob.png);
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    width: 585px;
+    padding-left: 100px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../images/bg-mob-2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: url(../images/bg-tab.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../images/bg-tab-2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-image: url(../images/bg.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url(../images/bg-2x.png);
+  }
 }
 
 .footer-text {
@@ -860,6 +1058,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px;
 }
 
 .footer-list {

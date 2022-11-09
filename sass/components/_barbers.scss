@@ -20,6 +20,10 @@
     width: 60px;
     height: 1px;
     background-color: currentColor;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+        margin-left: 150px;
+    }
 }
 
 .barbers-title {
@@ -30,6 +34,10 @@
     line-height: 1.17;
     letter-spacing: 0.05em;
     color: var(--primary-title-color);
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+        margin-left: 150px;
+    }
 }
 
 .barbers-list {
@@ -37,11 +45,13 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+   
 }
 
 .barbers-item {
-    width: 100%;
-    
+     
     @media screen and (min-width: 1200px) {
         width: calc((100% - 90px)/3);
     }

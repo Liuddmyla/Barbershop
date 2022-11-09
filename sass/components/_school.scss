@@ -1,10 +1,41 @@
 .school-content {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column-reverse;
+
+    @media screen and (min-width: 1200px) {
+       display: flex;
+       flex-direction: row;
+    }
+}
+
+.school-box{
     display: flex;
+    max-width: 100%;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+        width: 480px;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+       
+        width: 400px;
+        margin: 0 100px;
+        
+    }
 }
 
 .school-container {
-    padding-top: 9px;
+    padding: 0 15px;
+    margin-bottom: 44px;
 
+    @media screen and (min-width: 1200px) {
+      
+        margin-bottom: 0;
+        width: 40%;
+    }
+    
 }
 
 .school-item span {
@@ -43,23 +74,29 @@
 }
 
 .school-subtext {
-    max-width: 500px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: 500px;
+    }
 }
 
 .school-title {
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 430px;
-
+   
     font-family: 'Raleway';
     font-size: 42px;
     line-height: 1.17;
     letter-spacing: 0.05em;
     color: var(--primary-title-color);
+
+    @media screen and (min-width: 768px) {
+        width: 449px;
+    }
 }
 
 .school-item {
-    width: 170px;
+    width: calc((100% - 60px)/2);
     height: 133px;
     padding: 20px 24px;
     align-items: center;
@@ -75,13 +112,8 @@ span {
 .school-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-    width: 370px;
-}
-
-.school-list:first-child {
-    margin-left: 100px;
-    margin-right: 130px;
 }
 
 .school-item:nth-child(2) {
