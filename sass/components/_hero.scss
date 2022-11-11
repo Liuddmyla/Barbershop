@@ -1,5 +1,6 @@
 .hero-box {
     display: flex;
+    
 }
 
 .hero-soc__list {
@@ -15,6 +16,10 @@
     display: flex;
     align-items: flex-end;
     padding-left: 30px;
+
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
 }
 
 .hero-soc__list::before {
@@ -26,13 +31,39 @@
 }
 
 .hero-content {
-    padding: 272px 100px 208px 100px;
+    width: 100%;
+    padding: 272px 100px 208px 30px;
     background-color: var(--dark-fon-color);
     flex-grow: 1;
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/hero-bg-mob-2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 272px 100px 208px 100px;
+        background-image: url(../images/hero-bg-tab.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/hero-bg-tab-2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/hero-bg.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/hero-bg-2x.jpg);
+        }
+    }
+ 
 }
 
 .hero-soc__link {
@@ -64,17 +95,29 @@
     margin-top: 20px;
 
     font-family: 'Raleway';
-    font-size: 72px;
-    line-height: 1.18;
+    font-size: 48px;
+    line-height: 1.17;
     letter-spacing: 0.05em;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 72px;
+        line-height: 1.18;
+    }
 }
 
 .hero-content__text {
     max-width: 360px;
     margin-top: 20px;
 
+    font-size: 16px;
+    line-height: 1.63;
     color: var(--price-color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.67;
+    }
 }
 
 .hero-content__subtext::before {
